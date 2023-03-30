@@ -44,7 +44,7 @@ h5 {
         height: 45px;
         position: absolute;
         z-index: 1;
-        background-image: url(/images/Sun.png);
+        background-image: url(../images/Sun.png);
         background-position: center;
         background-size: cover;
         border-radius: 50%;
@@ -55,17 +55,17 @@ h5 {
         transform: translateX(0px);
     }
     .dark {
-        background-image: url(/images/Dark.png);
+        background-image: url(../images/Dark.png);
     }
     .light {
-        background-image: url(/images/Light.png);
+        background-image: url(../images/Light.png);
     }
     .active {
         opacity: 1;
     }
     .to-dark{
         transform: translateX(130px);
-        background-image: url(/images/Moon.png);
+        background-image: url(../images/Moon.png);
     }
 }
 .copyright{
