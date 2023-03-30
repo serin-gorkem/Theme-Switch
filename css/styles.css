@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+:root {
+  --toggle-bg-color: #5da7db;
+  --bg-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10%;
+  height: 100vh;
+  background-color: var(--bg-color);
+  transition: 0.4s all ease;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.theme-container {
+  height: 60px;
+  width: 200px;
+  background-color: var(--toggle-bg-color);
+  border-radius: 33px;
+  position: relative;
+}
+.theme-container .theme {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 33px;
+  transition: 0.4s all ease;
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+}
+.theme-container .switch-btn {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  z-index: 1;
+  background-image: url(../images/Sun.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  top: 6px;
+  left: 18px;
+  cursor: pointer;
+  transition: 0.4s all ease;
+  transform: translateX(0px);
+}
+.theme-container .dark {
+  background-image: url(../images/Dark.png);
+}
+.theme-container .light {
+  background-image: url(../images/Light.png);
+}
+.theme-container .active {
+  opacity: 1;
+}
+.theme-container .to-dark {
+  transform: translateX(130px);
+  background-image: url(../images/Moon.png);
+}
+
+.copyright {
+  width: 100vw;
+  text-align: center;
+  color: var(--toggle-bg-color);
+}
+.copyright a {
+  text-decoration: none;
+}
+
+/*Whole Design belongs to the https://www.youtube.com/watch?v=S6T6hrc8cQo Shmelt Studios*/
+/*Coding Crehera*//*# sourceMappingURL=styles.css.map */
